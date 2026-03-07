@@ -39,7 +39,8 @@ header {
 .header-top {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
   margin-bottom: 0.8rem;
 }
 
@@ -49,6 +50,7 @@ header {
 
 .header-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
