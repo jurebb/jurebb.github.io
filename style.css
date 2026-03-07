@@ -1,0 +1,156 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #fafaf8;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #2a2a2a;
+  --link: #1a1a1a;
+  --border: #e0e0e0;
+  --font: 'Georgia', serif;
+  --mono: 'Courier New', monospace;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.65;
+  padding: 3rem 1.5rem 6rem;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 3.5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+  transition: text-decoration-color 0.15s;
+}
+
+a:hover {
+  text-decoration-color: var(--text);
+}
+
+ul.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.93rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.97rem;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project-name {
+  font-weight: bold;
+}
+
+.project-desc {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.year {
+  font-weight: normal;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.interests {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.interests strong {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.interests p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 2rem 1.25rem 4rem;
+  }
+}
