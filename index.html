@@ -32,7 +32,7 @@
             </nav>
         </div>
         <div class="profile-photo-wrap">
-          <img src="profile.jpg" alt="Jure" class="profile-photo" />
+          <img src="assets/profile.jpg" alt="Jure" class="profile-photo" />
         </div>
         <p class="tagline">Hi, my name is Jure <em>(pronounced yoo-reh)</em>. Software engineer based in Zürich, Switzerland, with interests in tech, urbanism, sustainability, music, and dancing.</p>
       </div>
@@ -50,16 +50,22 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="project">
-        <span class="project-name">Pedestrian Flow Tracker <span class="year">2026 -</span></span>
-        <span class="project-desc">
-          Computer vision system using YOLOv8, ByteTrack, and OpenCV to detect and track people in urban footage.
-          Used in collaboration with Rachel Leonardo of Studio Leonardo to analyze pedestrian activity in a public plaza.
-        </span>
-        <ul class="links">
-          <li><a href="https://youtu.be/pt_MlLioKUU" target="_blank">Video</a></li>
-          <li><a href="https://github.com/jurebb/urbanism-counter" target="_blank">GitHub</a></li>
-          <li><a href="https://studioleonardo.design/" target="_blank">Studio Leonardo</a></li>
-        </ul>
+        <div class="project-main">
+          <div class="project-text">
+            <span class="project-name">Pedestrian Flow Tracker <span class="year">2026 -</span></span>
+            <span class="project-desc">
+              Computer vision system for detecting and tracking people in urban footage, producing movement paths and heatmaps.
+              Used in collaboration with Rachel Leonardo of Studio Leonardo to analyze pedestrian activity in public spaces.
+            </span>
+            <ul class="links">
+              <li><a href="https://youtu.be/pt_MlLioKUU" target="_blank">Video 1</a></li>
+              <li><a href="https://youtu.be/SSu5bV329xU" target="_blank">Video 2</a></li>
+              <li><a href="https://github.com/jurebb/urbanism-counter" target="_blank">GitHub</a></li>
+              <li><a href="https://studioleonardo.design/" target="_blank">Studio Leonardo</a></li>
+            </ul>
+          </div>
+          <video class="project-demo" src="assets/demo.mp4" autoplay loop muted playsinline></video>
+        </div>
       </div>
       <div class="project">
         <span class="project-name">Bass covers <span class="year">2025 -</span></span>
