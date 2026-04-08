@@ -314,6 +314,17 @@ ul.links {
   margin-bottom: 0;
 }
 
+@media (max-width: 720px) {
+  .project-main {
+    flex-direction: column;
+  }
+
+  .project-demo {
+    width: 100%;
+    max-width: 440px;
+  }
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 16px;
@@ -344,13 +355,5 @@ ul.links {
   .header-top .tagline {
     width: 100%;
     order: 3;
-  }
-
-  .project-main {
-    flex-direction: column;
-  }
-
-  .project-demo {
-    width: 100%;
   }
 }
